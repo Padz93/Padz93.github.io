@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="ProjectCity.css">
+    <title>City Seeker</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItemOne">
+                <p>CITY SEEKER</p>
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="slogan">Discover your next adventure today!</span>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">LONDON</h3>
+            <h3 class="menuItem">PARIS</h3>
+            <h3 class="menuItem">BARCELONA</h3>
+            <h3 class="menuItem">ROME</h3>
+            <h3 class="menuItem">AMSTERDAM</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="london.jpg" width="1000" height="500" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">LONDON</h1>
+                <h2 class="sliderPrice">FROM €299</h2>
+                 <button type="button" class="bookButton" onclick="toggleCheckout()" >BOOK NOW!</button>
+            </div>
+
+            <div class="sliderItem">
+                <img src="paris.jpg" width="1000" height="500" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">PARIS</h1>
+                <h2 class="sliderPrice"> FROM €399</h2>
+                <button type="button" class="bookButton" onclick="toggleCheckout()" >BOOK NOW!</button>
+            </div>
+
+            <div class="sliderItem">
+                <img src="barcelona.jpg" width="1000" height="500" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">BARCELONA</h1>
+                <h2 class="sliderPrice">FROM €249</h2>
+                <button type="button" class="bookButton" onclick="toggleCheckout()" >BOOK NOW!</button>
+
+            </div>
+            <div class="sliderItem">
+                <img src="rome.jpg" width="1000" height="500" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">ROME</h1>
+                <h2 class="sliderPrice">FROM €349</h2>
+                <button type="button" class="bookButton" onclick="toggleCheckout()" >BOOK NOW!</button>
+            </div>
+            <div class="sliderItem">
+                <img src="amsterdam.jpg" width="1000" height="500" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AMSTERDAM</h1>
+                <h2 class="sliderPrice">FROM €299</h2>
+                <button type="button" class="bookButton" onclick="toggleCheckout()" >BOOK NOW!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <span class="featureTitle">TRAVEL INSURANCE</span>
+            <span class="featureDesc">All city breaks have travel insurance included.</span>
+        </div>
+        <div class="feature">
+            <span class="featureTitle">FREE CANCELLATION</span>
+            <span class="featureDesc">Free cancellation upto 3 days before your trip.</span>
+        </div>
+        <div class="feature">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="london.jpg" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">LONDON</h1>
+            <h2 class="productPrice">FROM €299</h2>
+            <p class="productDesc">Lorem ipsum dolor sit amet consectetur impal adipisicing elit. Alias assumenda
+                dolorum
+                doloremque sapiente aliquid aperiam.</p>
+                </div>
+            <button type="button" class="bookButton" onclick="toggleCheckout()" >BOOK NOW!</button>
+        </div>
+
+        <div class="checkout" id="checkout">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="John Doe" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 234 5678" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="https://financefeeds.com/wp-content/uploads/2021/07/Visa_Inc._logo.svg.png" width="40" alt="" class="cardIcon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/618px-Mastercard-logo.svg.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button type="submit" class="payButton">Checkout!</button>
+            <span class="close" onclick="toggleCheckout()">X</span>
+        </div>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Discover all that Europe has to offer!</h1>
+            <img src="https://www.worldatlas.com/r/w1200/upload/b8/36/66/biggest-cities-in-europe.jpg"
+                alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="https://media.istockphoto.com/id/985510582/photo/different-food-cooked-on-a-wooden-table.jpg?s=612x612&w=0&k=20&c=icTsbvUdruGQrsusMRXdkVWx_sI8hJ1iyUYvXwFnc1w="
+                alt="" class="galleryImg">
+            <h1 class="galleryTitle">Try world famous foods from some of the world's top restaurants</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Explore some of europe's leading museums</h1>
+            <img src="https://joinusinfrance.com/wp-content/uploads/2018/03/1200x628-Ep-187-1-TINY.jpg"
+                alt="" class="galleryImg">
+        </div>
+    </div>
+
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/75/94/2b.jpg"
+                alt="" class="nsImg">
+        </div>
+
+        <div class="nsItem">
+            <h1 class="nsTitleSm">WHATEVER THE SEASON</h1>
+            <h1 class="nsTitle">EUROPE HAS YOU COVERED</h1>
+            <h1 class="nsTitle">FROM CHRISTMAS MARKETS TO CITY BEACHES</h1>
+             <button type="button" class="bookTrip" onclick="scrollToNavBar()">CHOOSE YOUR TRIP</button>
+         </div>
+
+        <div class="nsItem">
+            <img src="https://daytriptips.com/wp-content/uploads/2020/01/guide-summer-barcelona.jpg"
+                alt="" class="nsImg">
+        </div>
+    </div>
+
+    <div>
+        <h1 class="newsLetter">Sign Up for Our Newsletter</h1>
+            <form id="newsletterForm">
+              <input type="email" id="email" placeholder="Enter your email" required>
+              <div class="sBtn">
+              <button class="subscribeBtn" type="submit" onclick="submitForm(event)">Subscribe</button>
+              </div>
+            </form>
+
+        <div id="popupBox">
+              <div id="popupContent">
+                <h2>Thank you for subscribing!</h2>
+                <p>You will now receive our latest newsletters.</p>
+                <button class="subscribeBtn" type="submit" onclick="closePopup()">Close</button>
+              </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">London</li>
+                    <li class="fListItem">Paris</li>
+                    <li class="fListItem">Barcelona</li>
+                    <li class="fListItem">Rome</li>
+                    <li class="fListItem">Amsterdam</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footerRight">
+                <div class="footerRightMenu">
+                    <h1 class="fMenuTitle">Follow Us</h1>
+                    <div class="fIcons">
+                       <a href="https://www.facebook.com/" target="_blank" ><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/1200px-Facebook_f_logo_%282021%29.svg.png" alt="facebook" class="fIcon"></a>
+                        <a href="https://twitter.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/220px-Logo_of_Twitter.svg.png" alt="twitter" class="fIcon"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="instagram" class="fIcon"></a>
+                        <a href="https://www.pinterest.com/" target="_blank"><img src="https://i.pinimg.com/280x280_RS/f6/e9/3a/f6e93a06b500b2d87ffd32e1f56f7c6f.jpg" alt="pinterest" class="fIcon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>@Lama Dev. All rights reserved. 2022.</span>
+            </div>
+
+    </footer>
+
+    <script src="ProjectCity.js"></script>
+
+</body>
+
+</html>
